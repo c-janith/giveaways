@@ -291,11 +291,13 @@
         }
 
         function shareToWhatsApp() {
-            // The text to be shared
-            const text = encodeURIComponent("Join the Christmas Free Reload Giveaway! 🎄 Claim your festive free reload now: https://giveaway4u.free.nf/reload/christmas/");
+    // The text to be shared
+    const text = encodeURIComponent("🎄*නත්තල් වාසි ආයෙත්* 🎁\n\n➡️ නොමිලේ ලබා දෙන රීලොඩ් එක අදම ලබා ගන්න..\n🎉 පහත ලින්ක් එක ක්ලික් කර ඔබත් දැන්ම සම්බන්ද වන්න.\nසීමිත කාලයක් සදහා විතරයි!\n\n👉 දැන්ම පිවිසෙන්න:\nhttps://freegiveaway.work.gd/reload/\n\n🛑 අමතර ගාස්තු නැත - මේ අවස්ථාව නැති කරගන්න එපා! 🎄");
 
-            // Open WhatsApp with the pre-filled message
-            window.open(`https://wa.me/?text=${text}`);
+    // Open WhatsApp with the pre-filled message
+    window.open(`https://api.whatsapp.com/send?text=${text}`);
+}
+
 
             // Increment share count and update progress
             shareCount++;
