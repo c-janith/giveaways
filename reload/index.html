@@ -3,28 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-     <!-- Basic meta tags -->
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     
-     <!-- Essential Open Graph meta tags for WhatsApp preview -->
-     <meta property="og:title" content="Halloween Reload තෑග්ග 🎃 - Free Reload Giveaway">
-     <meta property="og:description" content="නොමිලේ රීලෝඩ් දිනාගන්න! Share කර තෑග්ග ලබාගන්න. Limited time offer! 🎁">
-     <meta property="og:image" content="https://i.ibb.co/PQXNnJk/pre.png">
-     <meta property="og:url" content="https://giveaway4u.free.nf/reload/halloween/">
-     
-     <!-- Additional meta tags for better sharing -->
-     <meta property="og:type" content="website">
-     <meta property="og:site_name" content="Halloween Reload Giveaway">
-     
-     <!-- WhatsApp specific meta tag -->
-     <meta property="og:image:width" content="300">
-     <meta property="og:image:height" content="300">
-
-    <title>Halloween Reload Giveaway</title>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Essential Open Graph meta tags for WhatsApp preview -->
+    <meta property="og:title" content="Christmas Reload Gift 🎄 - Free Reload Giveaway">
+    <meta property="og:description" content="Win free reloads this Christmas! Share and get your gift. Limited time offer! 🎁">
+    <meta property="og:image" content="https://i.ibb.co/PQXNnJk/pre.png">
+    <meta property="og:url" content="https://giveaway4u.free.nf/reload/christmas/">
+    
+    <title>Christmas Reload Giveaway</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -33,7 +20,7 @@
         }
 
         body {
-            background: linear-gradient(135deg, #ff8c00, #8b0000);
+            background: linear-gradient(135deg, #ffcc00, #006400);
             min-height: 100vh;
             font-family: 'Poppins', sans-serif;
             color: #fff;
@@ -60,8 +47,8 @@
         }
 
         h1 {
-            font-family: 'Creepster', cursive;
-            color: #ff6600;
+            font-family: 'Mountains of Christmas', cursive;
+            color: #ff0000;
             text-align: center;
             margin-bottom: 30px;
             font-size: 2.5em;
@@ -81,7 +68,7 @@
             border-radius: 10px;
             cursor: pointer;
             transition: transform 0.3s ease, background 0.3s ease;
-            border: 2px solid #ff6600;
+            border: 2px solid #ff0000;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -89,7 +76,7 @@
 
         .network-option:hover {
             transform: translateY(-5px);
-            background: rgba(255, 102, 0, 0.3);
+            background: rgba(255, 0, 0, 0.3);
         }
 
         .network-option img {
@@ -105,7 +92,7 @@
             width: 100%;
             padding: 12px;
             background: rgba(255, 255, 255, 0.1);
-            border: 2px solid #ff6600;
+            border: 2px solid #ff0000;
             border-radius: 8px;
             font-size: 16px;
             color: #fff;
@@ -118,14 +105,14 @@
 
         input:focus {
             outline: none;
-            border-color: #ff8c00;
+            border-color: #ffcc00;
         }
 
         button {
             width: 100%;
             padding: 12px;
-            background: #ff6600;
-            color: #000;
+            background: #ff0000;
+            color: #fff;
             border: none;
             border-radius: 8px;
             font-size: 16px;
@@ -136,40 +123,22 @@
         }
 
         button:hover {
-            background: #ff8c00;
+            background: #ffcc00;
         }
 
-        .bat {
+        .snowflake {
             position: fixed;
-            width: 30px;
-            height: 30px;
-            background: url('bat.svg') no-repeat center center;
+            width: 20px;
+            height: 20px;
+            background: url('snowflake.svg') no-repeat center center;
             background-size: contain;
-            animation: fly 10s infinite linear;
+            animation: fall 10s infinite linear;
             pointer-events: none;
         }
 
-        @keyframes fly {
-            0% { transform: translate(0, 0) rotate(0deg); }
-            25% { transform: translate(100px, -100px) rotate(45deg); }
-            50% { transform: translate(200px, 0) rotate(0deg); }
-            75% { transform: translate(100px, 100px) rotate(-45deg); }
-            100% { transform: translate(0, 0) rotate(0deg); }
-        }
-
-        .pumpkin {
-            position: fixed;
-            width: 50px;
-            height: 50px;
-            background: url('pumpkin.svg') no-repeat center center;
-            background-size: contain;
-            animation: float 5s infinite ease-in-out;
-            pointer-events: none;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
+        @keyframes fall {
+            0% { transform: translateY(-100px); }
+            100% { transform: translateY(100vh); }
         }
 
         .progress-container {
@@ -182,7 +151,7 @@
         .progress-bar {
             width: 0;
             height: 20px;
-            background-color: #ff6600;
+            background-color: #ff0000;
             border-radius: 10px;
             transition: width 0.5s ease-in-out;
         }
@@ -210,36 +179,28 @@
             opacity: 0.5;
             cursor: not-allowed;
         }
+
         .description {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    font-size: 1em;
-    line-height: 1.8;
-    font-family: 'Noto Sans Sinhala', 'Iskoola Pota', sans-serif;
-}
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
 
-.description p {
-    margin-bottom: 15px;
-}
+        .description p {
+            margin-bottom: 10px;
+        }
 
-.description ol {
-    margin-left: 20px;
-    margin-bottom: 15px;
-}
+        .description ol {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
 
-.description strong {
-    color: #ff6600;
-}
-
-input::placeholder {
-    font-family: 'Noto Sans Sinhala', 'Iskoola Pota', sans-serif;
-}
-
-button {
-    font-family: 'Noto Sans Sinhala', 'Iskoola Pota', sans-serif;
-}
+        .description strong {
+            color: #ff0000;
+        }
 
         @media (max-width: 480px) {
             .container {
@@ -258,25 +219,23 @@ button {
 </head>
 <body>
     <div class="container">
-    <h1>🎃 Halloween Reload Giveaway 👻</h1>
-    
-    <div class="description">
-        <p>Halloween තෑග්ගක් ලබාගන්න! 🎃</p>
-        <p>මෙම Halloween සමයේදී අපි ඔබට නොමිලේ රීලෝඩ් දිනා ගැනීමේ අවස්ථාව ලබා දෙනවා! මෙය ඉතාමත් විශේෂ අවස්ථාවක්!</p>
-        <p><strong>ඔබේ තෑග්ග ලබා ගන්නා ආකාරය:</strong></p>
-        <ol>
-            <li>මෙම සබැඳිය ඔබගේ WhatsApp කණ්ඩායම් 5ක් සමඟ බෙදා ගන්න</li>
-            <li>පහලින් ඇති තීරුව පිරෙන ආකාරය නරඹන්න</li>
-            <li>එම තීරුව සම්පූර්ණ වූ පසු, "රීලෝඩ් එක ලබා ගන්න" බොත්තම සක්‍රීය වේ</li>
-            <li>ඔබේ දුරකථන අංකය ඇතුළත් කර රීලෝඩ් එක ලබා ගන්න!</li>
-        </ol>
-        <p><strong>🚨 වැදගත්: </strong>රීලෝඩ් බොත්තම සක්‍රීය කිරීමට අනිවාර්යයෙන්ම කණ්ඩායම් 5ක් සමඟ බෙදා ගත යුතුය. මෙම අවස්ථාව මඟ නොහරින්න! 👻</p>
-        <p><em>* මෙම අවස්ථාව සීමිත කාලයකට පමණි</em></p>
-    </div>
+        <h1>🎄 Christmas Reload Giveaway 🎁</h1>
 
-    <div class="network-grid">
-        <!-- ... (network logos remain the same) ... -->
-         <!-- Add your network logos here -->
+        <div class="description">
+        <p>🎉 Treat Yourself to a Festive Surprise! 🎄</p>
+        <p>Get ready for a jolly good deal this Christmas! We're giving away free reloads to celebrate the most wonderful time of the year. Don't miss out on this festive offer!</p>
+        <p><strong>How to Claim Your Holiday Goodies:</strong></p>
+        <ol>
+            <li>Share this giveaway with 5 WhatsApp groups</li>
+            <li>Watch the magic happen as the progress bar fills</li>
+            <li>Once full, the "Claim Your Christmas Reload" button will unlock</li>
+            <li>Enter your number and claim your free reload!</li>
+        </ol>
+        <p><strong>🚨 Important: </strong>You must share with 5 groups to unlock the reload button. Don't let this gift slip away! 🎁</p>
+    </div>
+        
+        <div class="network-grid">
+            <!-- Add your network logos here -->
             <div class="network-option">
                 <img src="hutch-logo.png" alt="Hutch">
             </div>
@@ -289,21 +248,20 @@ button {
             <div class="network-option">
                 <img src="airtel-logo.png" alt="Airtel">
             </div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="shareProgress"></div>
+        </div>
+
+        <button class="share-button" onclick="shareToWhatsApp()">Share to 5 WhatsApp Groups</button>
+
+        <div class="input-group">
+            <input type="tel" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+        </div>
+
+        <button id="reloadButton" onclick="submitNumber()" class="disabled" disabled>Claim Your Christmas Reload</button>
     </div>
-
-    <div class="progress-container">
-        <div class="progress-bar" id="shareProgress"></div>
-    </div>
-
-    <button class="share-button" onclick="shareToWhatsApp()">WhatsApp කණ්ඩායම් 5ක් සමඟ බෙදාගන්න</button>
-
-    <div class="input-group">
-        <input type="tel" placeholder="ඔබේ දුරකථන අංකය ඇතුළත් කරන්න" pattern="[0-9]{10}" required>
-    </div>
-
-    <button id="reloadButton" onclick="submitNumber()" class="disabled" disabled>ඔබේ රීලෝඩ් එක ලබා ගන්න</button>
-</div>
-        
 
     <script>
     let shareCount = 0;
@@ -311,7 +269,7 @@ button {
 
     function submitNumber() {
         const number = document.querySelector('input[type="tel"]').value;
-        if(number.length === 10 && !isNaN(number)) {
+        if(number.length === 10 && !is NaN(number)) {
             // Redirect to ad network
             window.location.href = 'https://reticencevaliddecoction.com/pxwgshxk2?key=46b755930183758d5e5c63d557082e30';
         } else {
@@ -321,7 +279,7 @@ button {
 
     function shareToWhatsApp() {
         // The text to be shared
-        const text = encodeURIComponent("Join the Halloween Free Reload Giveaway! , 🎃 Claim your spooky free reload now: https://giveaway4u.free.nf/reload/halloween/");
+        const text = encodeURIComponent("Join the Christmas Free Reload Giveaway! 🎄 Claim your festive free reload now: https://giveaway4u.free.nf/reload/christmas/");
         
         // Open WhatsApp with the pre-filled message
         window.open(`https://wa.me/?text=${text}`);
@@ -344,35 +302,22 @@ button {
         }
     }
 
-    function createBats() {
-        for (let i = 0; i < 5; i++) {
-            const bat = document.createElement('div');
-            bat.classList.add('bat');
-            bat.style.left = Math.random() * 100 + 'vw';
-            bat.style.top = Math.random() * 100 + 'vh';
-            bat.style.animationDelay = Math.random() * 2 + 's';
-            document.body.appendChild(bat);
+    function createSnowflakes() {
+        for (let i = 0; i < 10; i++) {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDelay = Math.random() * 5 + 's';
+            document.body.appendChild(snowflake);
         }
     }
 
-    function createPumpkins() {
-        for (let i = 0; i < 3; i++) {
-            const pumpkin = document.createElement('div');
-            pumpkin.classList.add('pumpkin');
-            pumpkin.style.left = Math.random() * 100 + 'vw';
-            pumpkin.style.bottom = Math.random() * 20 + 'vh';
-            pumpkin.style.animationDelay = Math.random() * 2 + 's';
-            document.body.appendChild(pumpkin);
-        }
-    }
-
-    function initHalloweenEffects() {
-        createBats();
-        createPumpkins();
+    function initChristmasEffects() {
+        createSnowflakes();
     }
 
     // Call this function when the page loads
-    window.onload = initHalloweenEffects;
+    window.onload = initChristmasEffects;
 </script>
 
 <script type='text/javascript' src='//reticencevaliddecoction.com/0d/a0/49/0da0491dc165e8b4d312c16d5e871bce.js'></script>
