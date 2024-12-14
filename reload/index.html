@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Essential Open Graph meta tags for WhatsApp preview -->
     <meta property="og:title" content="Christmas Reload Gift 🎄 - Free Reload Giveaway">
     <meta property="og:description" content="Win free reloads this Christmas! Share and get your gift. Limited time offer! 🎁">
     <meta property="og:image" content="https://i.ibb.co/PQXNnJk/pre.png">
-    <meta property="og:url" content="https://giveaway4u.free.nf/reload/christmas/">
-    
+    <meta property="og:url" content="https://freegiveaway.work.gd/reload/">
+
     <title>Christmas Reload Giveaway</title>
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
@@ -127,18 +127,31 @@
         }
 
         .snowflake {
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            background: url('snowflake.svg') no-repeat center center;
-            background-size: contain;
-            animation: fall 10s infinite linear;
-            pointer-events: none;
-        }
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background: url('snowflake.svg') no-repeat center center;
+    background-size: contain;
+    animation: fall linear infinite, sway linear infinite;
+    z-index: 9999;
+}
+
 
         @keyframes fall {
-            0% { transform: translateY(-100px); }
-            100% { transform: translateY(100vh); }
+            to {
+                transform: translateY(100vh);
+            }
+        }
+
+        @keyframes sway {
+            0%, 100% {
+                transform: translateX(-10px);
+            }
+            50% {
+                transform: translateX(10px);
+            }
         }
 
         .progress-container {
@@ -222,18 +235,18 @@
         <h1>🎄 Christmas Reload Giveaway 🎁</h1>
 
         <div class="description">
-        <p>🎉 Treat Yourself to a Festive Surprise! 🎄</p>
-        <p>Get ready for a jolly good deal this Christmas! We're giving away free reloads to celebrate the most wonderful time of the year. Don't miss out on this festive offer!</p>
-        <p><strong>How to Claim Your Holiday Goodies:</strong></p>
-        <ol>
-            <li>Share this giveaway with 5 WhatsApp groups</li>
-            <li>Watch the magic happen as the progress bar fills</li>
-            <li>Once full, the "Claim Your Christmas Reload" button will unlock</li>
-            <li>Enter your number and claim your free reload!</li>
-        </ol>
-        <p><strong>🚨 Important: </strong>You must share with 5 groups to unlock the reload button. Don't let this gift slip away! 🎁</p>
-    </div>
-        
+            <p>🎉 Treat Yourself to a Festive Surprise! 🎄</p>
+            <p>මෙම නත්තල් සමයේදී හොදම වාසි අත්විදින්න. අපි ඔබට නොමිලේ රීලෝඩ් දිනා ගැනීමේ අවස්ථාව ලබා දෙනවා! මෙය ඉතාමත් විශේෂ අවස්ථාවක්!</p>
+            <p><strong>ඔබේ තෑග්ග ලබා ගන්නා ආකාරය:</strong></p>
+            <ol>
+                <li>මෙම සබැඳිය ඔබගේ WhatsApp කණ්ඩායම් 5ක් සමඟ බෙදා ගන්න</li>
+                <li>පහලින් ඇති තීරුව පිරෙන ආකාරය නරඹන්න</li>
+                <li>එම තීරුව සම්පූර්ණ වූ පසු, "රීලෝඩ් එක ලබා ගන්න" බොත්තම සක්‍රීය වේ</li>
+                <li>ඔබේ දුරකථන අංකය ඇතුළත් කර රීලෝඩ් එක ලබා ගන්න!</li>
+            </ol>
+            <p><strong>🛑 වැදගත්: </strong>රීලෝඩ් බොත්තම සක්‍රීය කිරීමට අනිවාර්යයෙන්ම කණ්ඩායම් 5ක් සමඟ බෙදා ගත යුතුය. මෙම අවස්ථාව මඟ නොහරින්න! 🎁</p>
+        </div>
+
         <div class="network-grid">
             <!-- Add your network logos here -->
             <div class="network-option">
@@ -254,72 +267,74 @@
             <div class="progress-bar" id="shareProgress"></div>
         </div>
 
-        <button class="share-button" onclick="shareToWhatsApp()">Share to 5 WhatsApp Groups</button>
+        <button class="share-button" onclick="shareToWhatsApp()">WhatsApp කණ්ඩායම් 5ක් සමඟ බෙදාගන්න</button>
 
         <div class="input-group">
-            <input type="tel" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+            <input type="tel" placeholder="දුරකථන අංකය ඇතුලත් කරන්න" pattern="[0-9]{10}" required>
         </div>
 
-        <button id="reloadButton" onclick="submitNumber()" class="disabled" disabled>Claim Your Christmas Reload</button>
+        <button id="reloadButton" onclick="submitNumber()" class="disabled" disabled>ඔබේ රීලෝඩ් එක ලබා ගන්න</button>
     </div>
 
     <script>
-    let shareCount = 0;
-    const totalShares = 5;
+        let shareCount = 0;
+        const totalShares = 5;
 
-    function submitNumber() {
-        const number = document.querySelector('input[type="tel"]').value;
-        if(number.length === 10 && !is NaN(number)) {
-            // Redirect to ad network
-            window.location.href = 'https://reticencevaliddecoction.com/pxwgshxk2?key=46b755930183758d5e5c63d557082e30';
-        } else {
-            alert('Please enter a valid 10-digit mobile number');
+        function submitNumber() {
+            const number = document.querySelector('input[type="tel"]').value;
+            if (number.length === 10 && !isNaN(number)) {
+                // Redirect to ad network
+                window.location.href = 'https://reticencevaliddecoction.com/pxwgshxk2?key=46b755930183758d5e5c63d557082e30';
+            } else {
+                alert('අංක 10 කින් යුත් අංකයත් ඇතුලත් කරන්න');
+            }
         }
-    }
 
-    function shareToWhatsApp() {
-        // The text to be shared
-        const text = encodeURIComponent("Join the Christmas Free Reload Giveaway! 🎄 Claim your festive free reload now: https://giveaway4u.free.nf/reload/christmas/");
+        function shareToWhatsApp() {
+            // The text to be shared
+            const text = encodeURIComponent("Join the Christmas Free Reload Giveaway! 🎄 Claim your festive free reload now: https://giveaway4u.free.nf/reload/christmas/");
+
+            // Open WhatsApp with the pre-filled message
+            window.open(`https://wa.me/?text=${text}`);
+
+            // Increment share count and update progress
+            shareCount++;
+            updateShareProgress();
+        }
+
+        function updateShareProgress() {
+            const progressBar = document.getElementById('shareProgress');
+            const reloadButton = document.getElementById('reloadButton');
+            const progress = (shareCount / totalShares) * 100;
+
+            progressBar.style.width = `${progress}%`;
+
+            if (shareCount >= totalShares) {
+                reloadButton.classList.remove('disabled');
+                reloadButton.disabled = false;
+            }
+        }
+
+        function createSnowflakes() {
+    for (let i = 0; i < 50; i++) {
+        const snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+        snowflake.style.left = Math.random() * 100 + 'vw';
+        snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+        snowflake.style.animationDelay = Math.random() * 5 + 's';
+        document.body.appendChild(snowflake);
+
+        snowflake.addEventListener('animationend', () => {
+            snowflake.remove();
+        });
+    }
+}
+
+
+
         
-        // Open WhatsApp with the pre-filled message
-        window.open(`https://wa.me/?text=${text}`);
+    </script>
 
-        // Increment share count and update progress
-        shareCount++;
-        updateShareProgress();
-    }
-
-    function updateShareProgress() {
-        const progressBar = document.getElementById('shareProgress');
-        const reloadButton = document.getElementById('reloadButton');
-        const progress = (shareCount / totalShares) * 100;
-
-        progressBar.style.width = `${progress}%`;
-
-        if (shareCount >= totalShares) {
-            reloadButton.classList.remove('disabled');
-            reloadButton.disabled = false;
-        }
-    }
-
-    function createSnowflakes() {
-        for (let i = 0; i < 10; i++) {
-            const snowflake = document.createElement('div');
-            snowflake.classList.add('snowflake');
-            snowflake.style.left = Math.random() * 100 + 'vw';
-            snowflake.style.animationDelay = Math.random() * 5 + 's';
-            document.body.appendChild(snowflake);
-        }
-    }
-
-    function initChristmasEffects() {
-        createSnowflakes();
-    }
-
-    // Call this function when the page loads
-    window.onload = initChristmasEffects;
-</script>
-
-<script type='text/javascript' src='//reticencevaliddecoction.com/0d/a0/49/0da0491dc165e8b4d312c16d5e871bce.js'></script>
+    <script type='text/javascript' src='//reticencevaliddecoction.com/0d/a0/49/0da0491dc165e8b4d312c16d5e871bce.js'></script>
 </body>
 </html>
