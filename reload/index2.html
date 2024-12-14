@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Basic meta tags -->
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <!-- Essential Open Graph meta tags for WhatsApp preview -->
+     <meta property="og:title" content="Halloween Reload තෑග්ග 🎃 - Free Reload Giveaway">
+     <meta property="og:description" content="නොමිලේ රීලෝඩ් දිනාගන්න! Share කර තෑග්ග ලබාගන්න. Limited time offer! 🎁">
+     <meta property="og:image" content="https://i.ibb.co/PQXNnJk/pre.png">
+     <meta property="og:url" content="https://giveaway4u.free.nf/reload/halloween/">
+     
+     <!-- Additional meta tags for better sharing -->
+     <meta property="og:type" content="website">
+     <meta property="og:site_name" content="Halloween Reload Giveaway">
+     
+     <!-- WhatsApp specific meta tag -->
+     <meta property="og:image:width" content="300">
+     <meta property="og:image:height" content="300">
+
+    <title>Halloween Reload Giveaway</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff8c00, #8b0000);
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 90%;
+            margin: 40px auto;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.5s ease-in;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-family: 'Creepster', cursive;
+            color: #ff6600;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .network-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .network-option {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+            border: 2px solid #ff6600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .network-option:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 102, 0, 0.3);
+        }
+
+        .network-option img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #ff6600;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #fff;
+            transition: border-color 0.3s ease;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #ff8c00;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #ff6600;
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background: #ff8c00;
+        }
+
+        .bat {
+            position: fixed;
+            width: 30px;
+            height: 30px;
+            background: url('bat.svg') no-repeat center center;
+            background-size: contain;
+            animation: fly 10s infinite linear;
+            pointer-events: none;
+        }
+
+        @keyframes fly {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(100px, -100px) rotate(45deg); }
+            50% { transform: translate(200px, 0) rotate(0deg); }
+            75% { transform: translate(100px, 100px) rotate(-45deg); }
+            100% { transform: translate(0, 0) rotate(0deg); }
+        }
+
+        .pumpkin {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            background: url('pumpkin.svg') no-repeat center center;
+            background-size: contain;
+            animation: float 5s infinite ease-in-out;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            width: 0;
+            height: 20px;
+            background-color: #ff6600;
+            border-radius: 10px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .share-button {
+            width: 100%;
+            padding: 12px;
+            background: #25D366;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .share-button:hover {
+            background: #128C7E;
+        }
+
+        .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .description {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .description p {
+            margin-bottom: 10px;
+        }
+
+        .description ol {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .description strong {
+            color: #ff6600;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .network-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎃 Halloween Reload Giveaway 👻</h1>
+
+        <div class="description">
+        <p>�treat Yourself to a Spooky Surprise! 🎃</p>
+        <p>Get ready for a hauntingly good deal this Halloween! We're giving away free reloads to celebrate the spookiest time of the year. But beware, this offer is so good, it's scary!</p>
+        <p><strong>How to Claim Your Ghostly Goodies:</strong></p>
+        <ol>
+            <li>Share this giveaway with 5 WhatsApp groups</li>
+            <li>Watch the magic happen as the progress bar fills</li>
+            <li>Once full, the "Claim Your Spooky Reload" button will unlock</li>
+            <li>Enter your number and claim your free reload!</li>
+        </ol>
+        <p><strong>🚨 Important: </strong>You must share with 5 groups to unlock the reload button. Don't let this treat slip through your fingers like a ghost! 👻</p>
+    </div>
+        
+        <div class="network-grid">
+            <!-- Add your network logos here -->
+            <div class="network-option">
+                <img src="hutch-logo.png" alt="Hutch">
+            </div>
+            <div class="network-option">
+                <img src="dialog-logo.png" alt="Dialog">
+            </div>
+            <div class="network-option">
+                <img src="mobitel-logo.png" alt="Mobitel">
+            </div>
+            <div class="network-option">
+                <img src="airtel-logo.png" alt="Airtel">
+            </div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="shareProgress"></div>
+        </div>
+
+        <button class="share-button" onclick="shareToWhatsApp()">Share to 5 WhatsApp Groups</button>
+
+        <div class="input-group">
+            <input type="tel" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+        </div>
+
+        <button id="reloadButton" onclick="submitNumber()" class="disabled" disabled>Claim Your Spooky Reload</button>
+    </div>
+
+    <script>
+    let shareCount = 0;
+    const totalShares = 5;
+
+    function submitNumber() {
+        const number = document.querySelector('input[type="tel"]').value;
+        if(number.length === 10 && !isNaN(number)) {
+            // Redirect to ad network
+            window.location.href = 'https://reticencevaliddecoction.com/pxwgshxk2?key=46b755930183758d5e5c63d557082e30';
+        } else {
+            alert('Please enter a valid 10-digit mobile number');
+        }
+    }
+
+    function shareToWhatsApp() {
+        // The text to be shared
+        const text = encodeURIComponent("Join the Halloween Free Reload Giveaway! , 🎃 Claim your spooky free reload now: https://giveaway4u.free.nf/reload/halloween/");
+        
+        // Open WhatsApp with the pre-filled message
+        window.open(`https://wa.me/?text=${text}`);
+
+        // Increment share count and update progress
+        shareCount++;
+        updateShareProgress();
+    }
+
+    function updateShareProgress() {
+        const progressBar = document.getElementById('shareProgress');
+        const reloadButton = document.getElementById('reloadButton');
+        const progress = (shareCount / totalShares) * 100;
+
+        progressBar.style.width = `${progress}%`;
+
+        if (shareCount >= totalShares) {
+            reloadButton.classList.remove('disabled');
+            reloadButton.disabled = false;
+        }
+    }
+
+    function createBats() {
+        for (let i = 0; i < 5; i++) {
+            const bat = document.createElement('div');
+            bat.classList.add('bat');
+            bat.style.left = Math.random() * 100 + 'vw';
+            bat.style.top = Math.random() * 100 + 'vh';
+            bat.style.animationDelay = Math.random() * 2 + 's';
+            document.body.appendChild(bat);
+        }
+    }
+
+    function createPumpkins() {
+        for (let i = 0; i < 3; i++) {
+            const pumpkin = document.createElement('div');
+            pumpkin.classList.add('pumpkin');
+            pumpkin.style.left = Math.random() * 100 + 'vw';
+            pumpkin.style.bottom = Math.random() * 20 + 'vh';
+            pumpkin.style.animationDelay = Math.random() * 2 + 's';
+            document.body.appendChild(pumpkin);
+        }
+    }
+
+    function initHalloweenEffects() {
+        createBats();
+        createPumpkins();
+    }
+
+    // Call this function when the page loads
+    window.onload = initHalloweenEffects;
+</script>
+
+<script type='text/javascript' src='//reticencevaliddecoction.com/0d/a0/49/0da0491dc165e8b4d312c16d5e871bce.js'></script>
+</body>
+</html>
